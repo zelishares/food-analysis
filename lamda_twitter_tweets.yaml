@@ -1,0 +1,37 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  lamdatwittertweets:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.7
+      CodeUri: .
+      Description: ''
+      MemorySize: 128
+      Timeout: 900
+      Role: 'arn:aws:iam::529282022069:role/LabRole'
+      Events:
+        Schedule1:
+          Type: Schedule
+          Properties:
+            Schedule: rate(7 days)
+        CloudWatchEvent1:
+          Type: CloudWatchEvent
+          Properties:
+            Pattern:
+              source:
+                - aws.autoscaling
+      Environment:
+        Variables:
+          ACCES_TOKEN_SECRET: dMM9yHiaCU8kehKNiJvKtF9dkgRgNupcX63Dcf4f8GH2l
+          ACCESS_TOKEN: 1501850566456193027-XeRgm19kD8EdNqt0OXxIdw5F2Cj0Fx
+          CONSUMER_KEY: tLlNyxv25Z4P6iDpNYohcnvQP
+          CONSUMER_SECRET: NuNIcft96X61AuAIxvEUdH3AOjenRf86V2TVClw2iyclila9Kn
+          DB_NAME: datalakeTwitter
+          ENDPOINT: datalaketwitter.c16p7bc6xhi2.us-east-1.rds.amazonaws.com
+          PASSWORD: '30101995'
+          USERNAME: nadine
+      Layers:
+        - 'arn:aws:lambda:us-east-1:529282022069:layer:project_layer:1'
