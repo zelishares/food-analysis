@@ -6,3 +6,5 @@ This gitHub repository contains the code of the group NoName for the group work 
 4. lamda_twitter_tweets.ymal --- which contains the same code as 1 in a different format
 5. AWS Tasty Lambda_cuisine.ipynb --- A Jupyter Notebook file which contains the python code for the aws lambda function that fetches data for all cuisine tags from the Tasty API.
 6. AWS Tasty Lambda_diet.ipynb  --- A Jupyter Notebook file which contains the python code for the aws lambda function that fetches data for all diet tags from the Tasty API.
+7. lambda_MyFoodData.yaml --- Lamda function exported from AWS
+8. Nutrition Facts MyFoodData.ipynb --- A Jupiter Notebook file wich contains the python code whchich served as a basis for the lambda function that fetches an Excel from MyFoodData.com with nutrition information of food
