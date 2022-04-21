@@ -6,6 +6,7 @@ This gitHub repository contains the code of the group NoName for the group work 
 2. Lamda_tasty_twitter_fetch.ymal --- which contains the same code as 1 in a different format
 3. lamda_twitter_tweets.zip --- contains the python code for the lambda function that fetches keywords from twitter
 4. lamda_twitter_tweets.ymal --- which contains the same code as 1 in a different format
+5. SQL_queries_twitter.sql --- SQL Queries for first data analysis
 
 ## Tasty API
 1. Get data from Tasty API for first insights.ipynb --- This Jupyter Notebook was used to gain first insights about the Tasty API (tags, etc.)
