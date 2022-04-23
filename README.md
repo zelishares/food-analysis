@@ -16,3 +16,4 @@ This gitHub repository contains the code of the group NoName for the group work 
 ## MyFoodData csv
 1. lambda_MyFoodData.yaml --- Lamda function exported from AWS
 2. Nutrition Facts MyFoodData.ipynb --- A Jupiter Notebook file wich contains the python code whchich served as a basis for the lambda function that fetches an Excel from MyFoodData.com with nutrition information of food
+3. Lambda MyFoodData.ipynb --- The exact code used for the lambda function in a Jupiter Notebook
